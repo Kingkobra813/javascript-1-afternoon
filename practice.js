@@ -76,7 +76,7 @@ dog.bark = function() {
 //Store the result of invoking the bark method in a variable called ruff.
 
 //Code Here
-const ruff = dog.bark;
+const ruff = dog.bark();
 //////////////////PROBLEM 6////////////////////
 
 //Write a function called looper that takes in an array. looper should declare
@@ -91,8 +91,7 @@ const ruff = dog.bark;
 //Code Here
 function looper(array) {
   let mySum = 0;
-  for (i = 1; i < array.length; i++)
-}
+  if()
 //////////////////PROBLEM 7////////////////////
 
 //Given the following function called math
@@ -105,7 +104,7 @@ function math(num1, num2, callback) {
 //returns the result of adding them together.
 
 //Code Here
-
+const add = (num1, num2) => num1 + num2;
 //Now invoke math, passing in the numbers 3 and 4, and your add function,
 //storing the result in the variable mathSum.
 
