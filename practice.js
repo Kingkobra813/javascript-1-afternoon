@@ -6,28 +6,32 @@
 //plus the value of the name parameter.
 
 //Code here
-
+function greeting(name) {
+  return "Hello, " + name;
+}
 //////////////////PROBLEM 2////////////////////
 
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
 //Code Here
-
+const newGreeting = function(name) {
+  return "Hello, " + name;
+}
 //////////////////PROBLEM 3////////////////////
 
 //Rewrite the function greeting as an arrow function.
 //Name it finalGreeting.
 
 //Code Here
-
+const finalGreeting = (name) => "Hello, " + name;
 //////////////////PROBLEM 4////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
 //Code Here
-
+const groceries = ["apples", "milk", "eggs", "bread"];
 //Write a function called doubleCheck that takes in an array
 //as a parameter.
 
@@ -36,6 +40,13 @@
 
 //Code Here
 
+function doubleCheck(arr) {
+  if (arr.includes("chocolate")) {
+    return arr;
+  } else {
+    arr.push("chocolate");
+  } return arr;
+}
 //////////////////PROBLEM 5////////////////////
 
 //Create an object saved to the variable dog.
@@ -44,21 +55,28 @@
 //and goodBoy (a boolean).
 
 //Code Here
-
+const dog = {
+  name: "Cody",
+  color: "white",
+  age: 7,
+  goodBoy: true,
+}
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
 //Code Here
-
+const devMountainClassPet = dog.name;
 //Add a method to dog called bark.
 //The value of bark should be a function that returns the string "Woof woof".
 
 //Code Here
-
+dog.bark = function() {
+  return "Woof woof"
+}
 //Store the result of invoking the bark method in a variable called ruff.
 
 //Code Here
-
+const ruff = dog.bark;
 //////////////////PROBLEM 6////////////////////
 
 //Write a function called looper that takes in an array. looper should declare
@@ -71,7 +89,10 @@
 //Return mySum.
 
 //Code Here
-
+function looper(array) {
+  let mySum = 0;
+  for (i = 1; i < array.length; i++)
+}
 //////////////////PROBLEM 7////////////////////
 
 //Given the following function called math
