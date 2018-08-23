@@ -91,7 +91,11 @@ const ruff = dog.bark();
 //Code Here
 function looper(array) {
   let mySum = 0;
-  if()
+  for (i = 1; i < array.length; i++) {
+    if (i % 2 === 0 || i >= 100) {
+      mySun += array[i];
+    }
+  } return mySum;
 //////////////////PROBLEM 7////////////////////
 
 //Given the following function called math
@@ -149,16 +153,16 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathroomScope = ["duck", "sailorDuck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let pondScope = ["duck", "realDuck"];
 
 //////////////////PROBLEM 10////////////////////
 
@@ -166,11 +170,16 @@ let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 //function which returns your name.
 
 //Code Here
-
+function outerFn(){
+  return function() {
+    return 'Adam';
+  };
+}
 //Now save the result of invoking outerFn into a variable called innerFn.
 
 //Code Here
-
+const innerFn = outerFn();
 //Now invoke innerFn and save the result to a variable called finalResult.
 
 //Code Here
+innerFn();
