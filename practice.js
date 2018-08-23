@@ -109,7 +109,7 @@ const add = (num1, num2) => num1 + num2;
 //storing the result in the variable mathSum.
 
 //Code Here
-
+math(3,4,add) = mathSum
 //////////////////PROBLEM 8////////////////////
 
 //Write a function called invoker that takes in one paramter, a callback function.
@@ -124,7 +124,9 @@ function sampleCallbackTwo() {
 }
 
 //Code Here
-
+const invoker = (callbackFunc) {
+  return callbackFunc();
+}
 //////////////////PROBLEM 9////////////////////
 
 let duck = "cute";
